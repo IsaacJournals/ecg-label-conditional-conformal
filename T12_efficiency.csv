@@ -1,0 +1,3 @@
+model,params_M,size_MB,cpu_ms_per_ecg_single,cpu_ms_per_ecg_ensemble,cpu_threads,gpu_ms_per_ecg_batch256,train_epoch_seconds_median,epochs_run_mean,hardware
+resnet1d,4.194309,16.844235,10.725070000034975,53.625350000174876,1,0.07161775234374446,8.02011227607727,16.6,Tesla T4
+fcn,0.276613,1.118761,7.538686999964739,37.693434999823694,1,0.08829522343747342,8.53300428390503,31.8,Tesla T4

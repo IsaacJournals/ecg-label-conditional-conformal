@@ -1,0 +1,81 @@
+{
+ "accessed_utc": "2026-09-30T13:23:06Z",
+ "sources": {
+  "PTB-XL": {
+   "name": "PTB-XL, a large publicly available electrocardiography dataset",
+   "version": "1.0.3",
+   "url": "https://physionet.org/files/ptb-xl/1.0.3/",
+   "doi": "10.13026/kfzx-aw45",
+   "license": "CC BY 4.0",
+   "download_route": "mirror",
+   "mirror_url": "https://physionet-open.s3.amazonaws.com/ptb-xl/1.0.3/",
+   "checksums_from": "https://physionet.org/files/ptb-xl/1.0.3/SHA256SUMS.txt",
+   "files_used": 43598,
+   "files_without_checksum": 0,
+   "download_counts": {
+    "cached": 43598,
+    "downloaded": 0
+   },
+   "records_selected": 21799,
+   "patients_selected": 18869,
+   "sha256_database_csv": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b"
+  },
+  "Challenge2021-georgia": {
+   "folder": "training/georgia",
+   "records": 5000,
+   "sampling": "uniform random sample of 5000 records (seed 2021)",
+   "listed_but_unpublished_excluded": 10,
+   "download_counts": {
+    "cached": 10000,
+    "downloaded": 0
+   }
+  },
+  "Challenge2021-chapman": {
+   "folder": "training/chapman_shaoxing",
+   "records": 5000,
+   "sampling": "uniform random sample of 5000 records (seed 2021)",
+   "listed_but_unpublished_excluded": 10,
+   "download_counts": {
+    "cached": 10000,
+    "downloaded": 0
+   }
+  },
+  "Challenge2021-ptbxl-headers": {
+   "records": 5000,
+   "download_counts": {
+    "cached": 5000,
+    "downloaded": 0
+   }
+  },
+  "Challenge2021": {
+   "name": "Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/CinC Challenge 2021",
+   "version": "1.0.3",
+   "url": "https://physionet.org/files/challenge-2021/1.0.3/",
+   "doi": "10.13026/34va-7q14",
+   "license": "CC BY 4.0"
+  },
+  "SNOMED-map-scored": {
+   "url": "https://raw.githubusercontent.com/physionetchallenges/evaluation-2021/main/dx_mapping_scored.csv",
+   "rows": 30,
+   "sha256": "fad13ad9f7ca230e7e6392ac8a264cb7cd157879525129f964c5f708eabb41d0"
+  },
+  "SNOMED-map-unscored": {
+   "url": "https://raw.githubusercontent.com/physionetchallenges/evaluation-2021/main/dx_mapping_unscored.csv",
+   "rows": 103,
+   "sha256": "ce53c9e35406e922f1634a38bb13c31e8cf7603291641a16c201d8e679f4fe94"
+  }
+ },
+ "hosts": [
+  "physionet.org"
+ ],
+ "prep_tag": "72110a1d",
+ "mapping_id_alignment": 1.0,
+ "mapping_audit_valid": true,
+ "n_ptbxl": 21388,
+ "n_external": {
+  "georgia": 4735,
+  "chapman": 4014
+ },
+ "preprocessing": "resample to 100 Hz (polyphase, anti-aliased) from 500-Hz sources, first 10 s, 0.5-Hz 2nd-order zero-phase Butterworth high-pass, clip +/-20.0 mV, per-lead z-score with training-set statistics",
+ "verified_official_source": true
+}

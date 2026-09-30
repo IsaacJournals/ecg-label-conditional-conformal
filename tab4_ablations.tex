@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Ablations on PTB-XL fold 10 ($\alpha=0.10$), changing one component at a time. Worst positive: lowest positive-class coverage over the five labels; worst stratum: lowest over all ten label $\times$ true-class strata. Set size: mean number of values in a label's prediction set.}
+\label{tab:ablations}
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccccc}
+\toprule
+Variant & AUROC & ECE & Worst positive & Worst stratum & Set size & Referral (\%) \\
+\midrule
+Full framework & 0.921 & 0.017 & 0.879 & 0.876 & 1.13 & 47.0 \\
+without temperature scaling & 0.921 & 0.021 & 0.879 & 0.876 & 1.13 & 47.0 \\
+global instead of label-conditional CP & 0.921 & 0.017 & 0.466 & 0.466 & 1.04 & 18.9 \\
+single network (seed 0) instead of 5-seed ensemble & 0.912 & 0.035 & 0.870 & 0.870 & 1.17 & 58.0 \\
+FCN instead of ResNet1d backbone & 0.925 & 0.019 & 0.889 & 0.889 & 1.13 & 49.4 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
