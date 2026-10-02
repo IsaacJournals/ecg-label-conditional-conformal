@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite it as below."
 title: "Label-conditional conformal prediction for multi-label 12-lead ECG diagnosis: code and results"
-version: 1.0.0
-date-released: 2026-10-01
+version: 1.0.1
+date-released: 2026-10-02
 license: MIT
 authors:
   - family-names: "Isaac"

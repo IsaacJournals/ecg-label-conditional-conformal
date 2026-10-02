@@ -1,0 +1,18 @@
+\begin{table}[!t]
+\centering\small
+\caption{Coverage across age bands (post hoc extension; PTB-XL fold 10). Cells are age band $\times$ label $\times$ true class with at least 30 test ECGs; worst positive: lowest positive-class cell. Within $\pm$0.05: cells whose coverage lies within 0.05 of $1-\alpha$; below: cells more than 0.05 under target; MAD: mean absolute deviation from $1-\alpha$.}
+\label{tab:age}
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{clcccccc}
+\toprule
+$\alpha$ & Calibration & Within $\pm$0.05 & Below & MAD & Worst positive & Worst cell & Referral (\%) \\
+\midrule
+0.10 & Label-conditional & 20/37 & 11 & 0.062 & 0.676 & 0.542 & 47.0 \\
+0.10 & Label-conditional + age band & 31/37 & 4 & 0.036 & 0.730 & 0.730 & 59.5 \\
+0.05 & Label-conditional & 32/37 & 4 & 0.041 & 0.730 & 0.688 & 74.5 \\
+0.05 & Label-conditional + age band & 34/37 & 2 & 0.023 & 0.838 & 0.812 & 82.5 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

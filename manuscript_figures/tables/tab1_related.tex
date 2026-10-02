@@ -1,0 +1,16 @@
+\begin{table}[!t]
+\centering\footnotesize
+\caption{Comparison with previous uncertainty-aware and externally validated deep-learning studies of the 12-lead ECG. CP, conformal prediction.}
+\label{tab:related}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{L{2.3cm}L{3.1cm}L{2.2cm}L{1.5cm}L{1.4cm}L{1.9cm}}
+\toprule
+Study & Uncertainty approach & Frozen external cohort & Coverage guarantee & Per-class coverage & Local recalibration size studied \\
+\midrule
+Vranken et al. \cite{vranken2021} & Monte Carlo dropout, Bayesian networks, ensembles & No & No & No & No \\
+Tassaddiq et al. \cite{tassaddiq2026} & Calibration error, Brier score & Yes (Ningbo) & No & No & No \\
+This study & Ensemble, temperature scaling, label-conditional CP & Yes (Georgia, Chapman-Shaoxing) & Yes & Yes & Yes (100--1,000 ECGs) \\
+\bottomrule
+\end{tabular}
+\end{table}
+

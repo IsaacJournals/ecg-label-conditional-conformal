@@ -1,0 +1,26 @@
+\begin{table}[!t]
+\centering\small
+\caption{Label-conditional conformal coverage at the external sites ($\alpha=0.10$; 20 random repeats per budget). Positive-class coverage: lowest label-wise mean coverage over repeats; in parentheses, the 5th percentile across repeats of the lowest label coverage within each repeat. $n$ is the number of labelled local ECGs available to M1, M3 and M4; M0 and M2 do not use local labels (M2 uses 947 unlabelled Georgia and 802 unlabelled Chapman-Shaoxing ECGs). Referral: share of evaluation ECGs with at least one label set equal to \{0,1\} or empty.}
+\label{tab:external}
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llccccc}
+\toprule
+ & & \multicolumn{3}{c}{Worst-label coverage, positive class} & Worst-label coverage, & Referral (\%) \\
+Site & Method & $n=100$ & $n=250$ & $n=1000$ & negative class ($n=250$) & ($n=250$) \\
+\midrule
+Georgia & M0 source thresholds & 0.701 (0.692) & 0.701 (0.692) & 0.701 (0.692) & 0.795 & 43.7 \\
+ & M2 covariate-shift weighting & 0.753 (0.735) & 0.753 (0.735) & 0.753 (0.735) & 0.824 & 50.2 \\
+ & M4 pooled & 0.717 (0.701) & 0.739 (0.716) & 0.794 (0.770) & 0.820 & 52.5 \\
+ & M3 hybrid & 0.839 (0.734) & 0.888 (0.800) & 0.894 (0.854) & 0.896 & 74.5 \\
+ & M1 target recalibration & 0.890 (0.779) & 0.888 (0.800) & 0.894 (0.854) & 0.896 & 74.5 \\
+\midrule
+Chapman-Shaoxing & M0 source thresholds & 0.851 (0.838) & 0.851 (0.838) & 0.851 (0.838) & 0.891 & 22.0 \\
+ & M2 covariate-shift weighting & 0.821 (0.799) & 0.821 (0.799) & 0.821 (0.799) & 0.840 & 32.6 \\
+ & M4 pooled & 0.855 (0.831) & 0.862 (0.813) & 0.881 (0.853) & 0.893 & 25.2 \\
+ & M3 hybrid & 0.896 (0.801) & 0.891 (0.757) & 0.901 (0.857) & 0.901 & 35.6 \\
+ & M1 target recalibration & 0.896 (0.801) & 0.891 (0.757) & 0.901 (0.857) & 0.901 & 35.6 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
