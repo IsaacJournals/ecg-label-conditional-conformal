@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Label-conditional conformal prediction for multi-label 12-lead ECG diagnosis: code and results"
+version: 1.0.0
+date-released: 2026-10-01
+license: MIT
+authors:
+  - family-names: "Isaac"
+    given-names: "R. Augustian"
+    affiliation: "Saveetha Engineering College, Chennai, India"
+  - family-names: "Ayesha"
+    given-names: "Amreen"
+    affiliation: "Manipal Institute of Technology Bengaluru, Manipal Academy of Higher Education, India"
+  - family-names: "Sadiq Ali"
+    given-names: "A. Jaffar"
+    affiliation: "Sri Muthukumaran Institute of Technology, Chennai, India"
+    orcid: "https://orcid.org/0009-0003-4958-8319"
+  - family-names: "Gnana Gandhi"
+    given-names: "S. Mercy"
+    affiliation: "Sathyabama Institute of Science and Technology, Chennai, India"
+keywords:
+  - electrocardiography
+  - conformal prediction
+  - uncertainty quantification
+  - dataset shift
+  - PTB-XL
