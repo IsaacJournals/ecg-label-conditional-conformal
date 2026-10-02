@@ -1,5 +1,0 @@
-split,role,folds,records,patients,pos_NORM,pos_MI,pos_STTC,pos_CD,pos_HYP
-train,model fitting,1-8,17084,14823,7596,4379,4186,3907,2119
-tune,"early stopping, temperature, F1 thresholds, HPO",9 (half of patients),1073,958,473,273,266,232,133
-calib,conformal calibration only,9 (other half),1073,959,482,267,262,263,135
-test,untouched test,10,2158,1877,963,550,521,496,262

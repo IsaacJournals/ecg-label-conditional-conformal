@@ -1,6 +1,0 @@
-model,param,tune_macro_auroc
-logreg,C=0.01,0.8879407174585969
-logreg,C=0.1,0.8896469183242088
-logreg,C=1.0,0.8888958628920122
-hgb,max_leaf_nodes=15,0.905846975039732
-hgb,max_leaf_nodes=31,0.9058662056814013

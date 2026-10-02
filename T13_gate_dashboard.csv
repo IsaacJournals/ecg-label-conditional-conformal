@@ -1,9 +1,0 @@
-gate,name,criterion,observed,pass,critical,evidence
-G1,Discrimination,"macro-AUROC >= 0.90 and > best classical (hgb_ens), Holm p < 0.05","0.9214; delta +0.0242 [+0.0192, +0.0296], p_holm=0.0040",True,True,"T02, T04"
-G2,Calibration,temperature-scaled macro ECE <= 0.03 and <= uncalibrated,0.0172 vs 0.0206,True,True,T03
-G3,In-domain stratum coverage,"every (class, true class) coverage >= 0.88 (Mondrian)",min 0.876 (global CP min 0.466),False,True,T05
-G4,Subgroup validity,positive coverage >= 0.85 in each sex/age group with >= 30 positives,min 0.676 over 27 cells,False,False,T06
-G5,Shift restoration,M1 worst-class positive coverage at n=250 >= 0.87 at every site,M1 0.888 (M0 source 0.701),True,True,T09
-G6,Robustness,AUROC drop at 20 dB SNR <= 0.05 and positive coverage >= 0.85,drop 0.0002; coverage 0.879,True,False,T11
-G7,Compute,ResNet1d CPU inference <= 100 ms per ECG (single model),10.7 ms,True,False,T12
-G0,Data validity,"official PhysioNet source, all checksums verified, mapping audit valid","verified=True, mapping_audit_valid=True",True,True,"DATA_PROVENANCE.json, T01b"
